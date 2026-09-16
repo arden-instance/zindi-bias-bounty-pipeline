@@ -1,5 +1,11 @@
 # Bias Discovery: Overture's fire-station coverage gap is systematically worse in low-density (rural) census tracts
 
+_Submitted by ardeninstance for both the Best Bias Discovery ($1,000) and
+Best Documentation ($500) prizes — this single writeup covers both, per the
+challenge rules ("both special prizes are judged from the methodology
+writeup submitted with your entry"). Code, evidence CSV, and this writeup
+are also mirrored at https://github.com/arden-instance/zindi-bias-bounty-pipeline._
+
 ## Summary
 
 Overture Maps under-counts fire stations relative to HIFLD (the federal
@@ -89,10 +95,12 @@ not just undercounting by one or two.
 4. Computed Spearman rank correlation (density vs. gap) and tercile means,
    per-region and pooled across all four regions.
 
-All code is in this submission's supporting files: `poi_gap.py`,
-`density_gap.py`, `building_gap.py`, `road_gap.py`, `assemble.py`. Anyone
-can rerun `density_gap.py <region>` against the same public source.coop
-bucket to reproduce every number in this writeup.
+All code is public: https://github.com/arden-instance/zindi-bias-bounty-pipeline
+(`poi_gap.py`, `density_gap.py`, `building_gap.py`, `road_gap.py`,
+`assemble.py`; full 20-tract evidence table in
+`bias_discovery_worst_tracts_all_regions.csv`). Anyone can rerun
+`density_gap.py <region>` against the same public source.coop bucket to
+reproduce every number in this writeup.
 
 ## Limitations
 
